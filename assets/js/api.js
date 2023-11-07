@@ -17,9 +17,9 @@ const getLocation = () => {
         fetch(`https://api.openuv.io/api/v1/uv?lat=${lat}&lng=${long}&alt=100&dt=${currentDate}`, requestOptions)
             .then(response => response.json())
             .then(data => {
-                document.querySelector('.results').innerText = `${data.result.uv}`
+                document.querySelector('.uviResult').innerText = `${data.result.uv}`
             })
-            .catch(error => alert('Unable to find the current UV index.', error));
+            .catch(error => document.querySelector('.uviResult').innerText = 'is currently unavailable.');
 
     }
     const errorCallback = error => console.log(error)
