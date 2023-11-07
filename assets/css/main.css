@@ -1851,7 +1851,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image:before {
+		/* .image:before {
 			background: url("images/overlay.png");
 			content: '';
 			height: 100%;
@@ -1859,7 +1859,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
+		} */
 
 		.image.fit {
 			display: block;
@@ -2667,6 +2667,11 @@ input, select, textarea {
 					margin: 0;
 					padding: 0;
 					border: 0;
+				}
+
+				#footer .copyright a  {
+					border-bottom: none;
+					color: #7c8081;
 				}
 
 /* Wide */
